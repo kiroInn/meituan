@@ -25,6 +25,8 @@
 		48A32D5E242C901600A6B6DA /* ModulesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A32D5D242C901600A6B6DA /* ModulesView.xib */; };
 		48A32D62242C98BB00A6B6DA /* BottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A32D61242C98BB00A6B6DA /* BottomView.xib */; };
 		48A32D64242C9EB000A6B6DA /* ModulesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A32D63242C9EB000A6B6DA /* ModulesViewController.m */; };
+		F5F8F0E8242DA1D0005F5F39 /* SwiperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F8F0E6242DA1D0005F5F39 /* SwiperViewController.m */; };
+		F5F8F0EF242DAD8C005F5F39 /* SwiperView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5F8F0EE242DAD8C005F5F39 /* SwiperView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,9 @@
 		48A32D61242C98BB00A6B6DA /* BottomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomView.xib; sourceTree = "<group>"; };
 		48A32D63242C9EB000A6B6DA /* ModulesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModulesViewController.m; sourceTree = "<group>"; };
 		48A32D65242C9ED700A6B6DA /* ModulesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModulesViewController.h; sourceTree = "<group>"; };
+		F5F8F0E5242DA1D0005F5F39 /* SwiperViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiperViewController.h; sourceTree = "<group>"; };
+		F5F8F0E6242DA1D0005F5F39 /* SwiperViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwiperViewController.m; sourceTree = "<group>"; };
+		F5F8F0EE242DAD8C005F5F39 /* SwiperView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwiperView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +163,7 @@
 		48A32D27242B210800A6B6DA /* meituan */ = {
 			isa = PBXGroup;
 			children = (
+				F5F8F0D9242D9EBF005F5F39 /* swiper */,
 				0765AAF8242CCB29007C11F9 /* toolbutton */,
 				0765AAEC242CBF24007C11F9 /* head */,
 				48802539242CAB3700B8FAFF /* modules */,
@@ -192,6 +198,16 @@
 				48A32D4E242B210800A6B6DA /* Info.plist */,
 			);
 			path = meituanUITests;
+			sourceTree = "<group>";
+		};
+		F5F8F0D9242D9EBF005F5F39 /* swiper */ = {
+			isa = PBXGroup;
+			children = (
+				F5F8F0E5242DA1D0005F5F39 /* SwiperViewController.h */,
+				F5F8F0E6242DA1D0005F5F39 /* SwiperViewController.m */,
+				F5F8F0EE242DAD8C005F5F39 /* SwiperView.xib */,
+			);
+			path = swiper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48A32D35242B210800A6B6DA /* LaunchScreen.storyboard in Resources */,
+				F5F8F0EF242DAD8C005F5F39 /* SwiperView.xib in Resources */,
 				0765AAF2242CC0CD007C11F9 /* HotView.xib in Resources */,
 				48A32D5E242C901600A6B6DA /* ModulesView.xib in Resources */,
 				48A32D32242B210800A6B6DA /* Assets.xcassets in Resources */,
@@ -332,6 +349,7 @@
 			files = (
 				48A32D2D242B210800A6B6DA /* ViewController.m in Sources */,
 				0765AAFD242CCBA5007C11F9 /* OneToolButtonView.m in Sources */,
+				F5F8F0E8242DA1D0005F5F39 /* SwiperViewController.m in Sources */,
 				48A32D38242B210800A6B6DA /* main.m in Sources */,
 				48A32D2A242B210800A6B6DA /* AppDelegate.m in Sources */,
 				48A32D64242C9EB000A6B6DA /* ModulesViewController.m in Sources */,

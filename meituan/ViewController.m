@@ -11,6 +11,7 @@
 #import "ToolButtonView.h"
 #import "ToolButton.h"
 #import "OneToolButtonView.h"
+#import "SwiperViewController.h"
 
 
 @interface ViewController ()
@@ -63,5 +64,12 @@
     rect.origin.y = modulesView.frame.size.height + modulesView.frame.origin.y;
     _bottemView.frame = rect;
     [self.view addSubview:_bottemView];
+    
+    UIView *swiperView = [[SwiperViewController alloc] initWithNibName:@"SwiperView" bundle:nil].view;
+    rect = swiperView.frame;
+    rect.origin.x = 10;
+    rect.origin.y = _bottemView.frame.origin.y + _bottemView.frame.size.height + 20;
+    swiperView.frame = rect;
+    [self.view addSubview:swiperView];
 }
 @end
