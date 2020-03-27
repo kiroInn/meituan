@@ -32,9 +32,7 @@
         CGRect toolButtonRect = view.frame;
         toolButtonHeight = toolButtonRect.size.height - 44;
         NSLog(@"toolButtonHeight ======%f", toolButtonHeight);
-        view.imageIcon.image = [UIImage imageNamed:toolbutton.icon];
-        view.name.text = toolbutton.name;
-
+        view.model = toolbutton;
         CGFloat pointX = toolButtonWidth * index + (toolButtonWidth - toolButtonRect.size.width) / 2;
         view.frame = CGRectMake(pointX, rect.origin.y, toolButtonWidth, toolButtonHeight);
         [self addSubview:view];

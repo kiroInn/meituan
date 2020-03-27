@@ -8,30 +8,26 @@
 
 #import "OneToolButtonView.h"
 
-@implementation OneToolButtonView
+@interface OneToolButtonView()
 
+@property (weak, nonatomic) IBOutlet UIImageView *imageIcon;
+@property (weak, nonatomic) IBOutlet UILabel *name;
+
+@end
+
+@implementation OneToolButtonView
 
 
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 //- (void)drawRect:(CGRect)rect {
 //    // Drawing code
-//    
-//    NSLog(@"========%@",_buttonName);
-//    NSLog(@"========%@",_lableString);
-//     UIButton *button = [[UIButton alloc] init];
-//     button.frame = CGRectMake(31, 0, 40, 40);
-//     [button setImage:[UIImage imageNamed:_buttonName] forState:UIControlStateNormal];
-//    [self addSubview:button];
-//
-//     UILabel *lable = [[UILabel alloc] init];
-//     lable.frame = CGRectMake(26, 40, 50, 16);
-//     lable.textAlignment = NSTextAlignmentCenter;
-//     [lable setFont:[UIFont systemFontOfSize:14]];
-//     lable.text = _lableString;
-//    
-//    [self addSubview:lable];
 //}
 
+-(void)setModel:(ToolButton * _Nonnull)model {
+    _model = model;
+    self.imageIcon.image= [UIImage imageNamed:model.icon];
+    self.name.text = model.name;
+}
 
 @end

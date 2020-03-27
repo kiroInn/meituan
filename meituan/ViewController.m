@@ -49,6 +49,7 @@
     rect.size.height = 70;
     NSLog(@"_toolButtonView========%@", NSStringFromCGRect(rect));
     _toolButtonView = [[ToolButtonView alloc] initWithFrame:rect];
+    _toolButtonView.backgroundColor = [UIColor systemYellowColor];
     NSLog(@"_toolButtonView========%@", NSStringFromCGRect(_toolButtonView.frame));
     [self.view addSubview:_toolButtonView];
 

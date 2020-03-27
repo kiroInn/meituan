@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -56,15 +57,6 @@
                         <constraint firstAttribute="width" constant="34" id="LNU-fe-ynG"/>
                     </constraints>
                 </imageView>
-                <textField opaque="NO" contentMode="left" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="时事新闻" textAlignment="natural" minimumFontSize="17" background="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kqz-u9-bzH">
-                    <rect key="frame" x="160" y="44" width="160" height="34"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="ZlK-BY-HUX"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="晴 24°C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UWa-6Y-xvC">
                     <rect key="frame" x="70" y="64" width="59" height="12"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -84,20 +76,40 @@
                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
                     </state>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLL-sv-zSH" propertyAccessControl="none">
+                    <rect key="frame" x="160" y="44" width="160" height="34"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="gcX-ca-JL6"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="vMI-jM-qWu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="tintColor" systemColor="tertiaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="时事新闻" image="magnifyingglass" catalog="system">
+                        <color key="titleColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
             </subviews>
-            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="meb-x5-dRh" firstAttribute="top" secondItem="1RC-xn-LVw" secondAttribute="top" id="8JD-wH-Ixr"/>
                 <constraint firstItem="meb-x5-dRh" firstAttribute="leading" secondItem="GhL-eL-U4b" secondAttribute="trailing" constant="5" id="A36-3x-6ue"/>
                 <constraint firstItem="GhL-eL-U4b" firstAttribute="top" secondItem="1RC-xn-LVw" secondAttribute="top" id="CbT-W8-X4I"/>
+                <constraint firstItem="aLL-sv-zSH" firstAttribute="top" secondItem="1RC-xn-LVw" secondAttribute="top" id="L2b-K0-9yA"/>
                 <constraint firstItem="Bpv-Fk-XIc" firstAttribute="top" secondItem="1RC-xn-LVw" secondAttribute="top" id="Oq9-eZ-JXK"/>
-                <constraint firstItem="GhL-eL-U4b" firstAttribute="leading" secondItem="kqz-u9-bzH" secondAttribute="trailing" constant="15" id="Qh8-89-dbm"/>
                 <constraint firstItem="iLc-fN-hQX" firstAttribute="leading" secondItem="1RC-xn-LVw" secondAttribute="leading" constant="20" id="Yjt-q8-95r"/>
-                <constraint firstItem="kqz-u9-bzH" firstAttribute="leading" secondItem="Bpv-Fk-XIc" secondAttribute="trailing" constant="10" id="oR3-B4-HnJ"/>
                 <constraint firstItem="iLc-fN-hQX" firstAttribute="top" secondItem="1RC-xn-LVw" secondAttribute="top" id="ozB-P4-lRH"/>
                 <constraint firstItem="UWa-6Y-xvC" firstAttribute="top" secondItem="Bpv-Fk-XIc" secondAttribute="bottom" constant="2" id="tuM-yr-dGI"/>
-                <constraint firstItem="kqz-u9-bzH" firstAttribute="top" secondItem="1RC-xn-LVw" secondAttribute="top" id="vAn-7v-QnO"/>
+                <constraint firstItem="GhL-eL-U4b" firstAttribute="leading" secondItem="aLL-sv-zSH" secondAttribute="trailing" constant="15" id="uUA-Ta-Kcy"/>
                 <constraint firstItem="UWa-6Y-xvC" firstAttribute="leading" secondItem="Bpv-Fk-XIc" secondAttribute="leading" id="xDm-DV-epI"/>
+                <constraint firstItem="aLL-sv-zSH" firstAttribute="leading" secondItem="Bpv-Fk-XIc" secondAttribute="trailing" constant="10" id="xuK-hy-7yF"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="1RC-xn-LVw"/>

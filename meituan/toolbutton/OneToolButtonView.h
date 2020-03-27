@@ -7,12 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ToolButton.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface OneToolButtonView : UIView
-@property (weak, nonatomic) IBOutlet UIImageView *imageIcon;
-@property (weak, nonatomic) IBOutlet UILabel *name;
+
+@property(strong,nonatomic) ToolButton *model;
+
+
+-(void)setModel:(ToolButton * _Nonnull)model;
 @end
 
 NS_ASSUME_NONNULL_END
