@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 -(void)setModel:(ToolButton * _Nonnull)model;
++(instancetype)view;
 @end
 
 NS_ASSUME_NONNULL_END

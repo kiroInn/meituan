@@ -30,4 +30,9 @@
     self.name.text = model.name;
 }
 
++(instancetype)view{
+    NSBundle *rootBundle = [NSBundle mainBundle];
+    return  [[rootBundle loadNibNamed:@"OneToolButtonView" owner:self options:nil] lastObject];
+}
+
 @end

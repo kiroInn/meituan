@@ -25,10 +25,10 @@
     CGFloat toolButtonHeight;
     CGFloat toolButtonWidth = rect.size.width / colNum;
     
-    NSBundle *rootBundle = [NSBundle mainBundle];
+    
     for (NSDictionary *dict in arrayDicts) {
         ToolButton *toolbutton = [ToolButton tooButtonWithDic:dict];
-        OneToolButtonView *view = [[rootBundle loadNibNamed:@"OneToolButtonView" owner:self options:nil] lastObject];
+        OneToolButtonView *view = [OneToolButtonView view];
         CGRect toolButtonRect = view.frame;
         toolButtonHeight = toolButtonRect.size.height - 44;
         NSLog(@"toolButtonHeight ======%f", toolButtonHeight);
