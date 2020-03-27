@@ -31,7 +31,6 @@
     NSBundle *rootBundle = [NSBundle mainBundle];
     _headerView = [[rootBundle loadNibNamed:@"HeaderView" owner:nil options:nil] lastObject];
     CGRect rect = _headerView.frame;
-
     _headerView.frame = rect;
     [self.view addSubview:_headerView];
 

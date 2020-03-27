@@ -15,7 +15,7 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <point key="canvasLocation" x="71" y="98"/>
         </activityIndicatorView>
-        <view contentMode="scaleToFill" id="zqo-j6-bn4">
+        <view contentMode="scaleToFill" id="zqo-j6-bn4" customClass="HeaderView">
             <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
@@ -76,7 +76,7 @@
                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
                     </state>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLL-sv-zSH" propertyAccessControl="none">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLL-sv-zSH" userLabel="Search Button" propertyAccessControl="none">
                     <rect key="frame" x="160" y="44" width="160" height="34"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
@@ -113,6 +113,9 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="1RC-xn-LVw"/>
+            <connections>
+                <outlet property="searchButton" destination="aLL-sv-zSH" id="YsL-aj-fs4"/>
+            </connections>
             <point key="canvasLocation" x="-353.62318840579712" y="-121.20535714285714"/>
         </view>
     </objects>
