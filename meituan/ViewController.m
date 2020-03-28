@@ -12,6 +12,7 @@
 #import "ToolButton.h"
 #import "OneToolButtonView.h"
 #import "SwiperViewController.h"
+#import "util/ColorUtil.h"
 
 
 @interface ViewController ()
@@ -20,7 +21,6 @@
 @property(nonatomic, weak) IBOutlet UIView *hotView;
 @property(nonatomic, weak) IBOutlet UIView *modulesView;
 @property(nonatomic, weak) IBOutlet UIView *bottemView;
-@property(nonatomic, strong) ModulesViewController *menuController;
 @end
 
 @implementation ViewController
@@ -48,7 +48,7 @@
     rect.size.height = 70;
     NSLog(@"_toolButtonView========%@", NSStringFromCGRect(rect));
     _toolButtonView = [[ToolButtonView alloc] initWithFrame:rect];
-    _toolButtonView.backgroundColor = [UIColor systemYellowColor];
+    _toolButtonView.backgroundColor =  ssRGBHex(0xffcf01);
     NSLog(@"_toolButtonView========%@", NSStringFromCGRect(_toolButtonView.frame));
     [self.view addSubview:_toolButtonView];
 
@@ -59,16 +59,10 @@
     modulesView.frame = rect;
     [self.view addSubview:modulesView];
 
-    [[NSBundle mainBundle] loadNibNamed:@"BottomView" owner:self options:nil];
-    rect = modulesView.frame;
-    rect.origin.y = modulesView.frame.size.height + modulesView.frame.origin.y;
-    _bottemView.frame = rect;
-    [self.view addSubview:_bottemView];
-    
     UIView *swiperView = [[SwiperViewController alloc] initWithNibName:@"SwiperView" bundle:nil].view;
     rect = swiperView.frame;
     rect.origin.x = 10;
-    rect.origin.y = _bottemView.frame.origin.y + _bottemView.frame.size.height + 20;
+    rect.origin.y = modulesView.frame.origin.y + modulesView.frame.size.height + 20;
     swiperView.frame = rect;
     [self.view addSubview:swiperView];
 }

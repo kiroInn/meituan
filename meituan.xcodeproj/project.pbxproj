@@ -14,6 +14,9 @@
 		0765AAFD242CCBA5007C11F9 /* OneToolButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0765AAFA242CCBA5007C11F9 /* OneToolButtonView.m */; };
 		0765AB00242CCC19007C11F9 /* ToolButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0765AAFF242CCC19007C11F9 /* ToolButton.m */; };
 		0765AB06242CE573007C11F9 /* ToolButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0765AB05242CE573007C11F9 /* ToolButtonView.m */; };
+		489F238A242F2366004BB723 /* ModulesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 489F2389242F2366004BB723 /* ModulesCell.m */; };
+		489F238C242F236C004BB723 /* ModulesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 489F238B242F236C004BB723 /* ModulesCell.xib */; };
+		489F238E242F295D004BB723 /* ColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 489F238D242F295D004BB723 /* ColorUtil.m */; };
 		48A32D2A242B210800A6B6DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A32D29242B210800A6B6DA /* AppDelegate.m */; };
 		48A32D2D242B210800A6B6DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A32D2C242B210800A6B6DA /* ViewController.m */; };
 		48A32D30242B210800A6B6DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48A32D2E242B210800A6B6DA /* Main.storyboard */; };
@@ -57,6 +60,11 @@
 		0765AAFF242CCC19007C11F9 /* ToolButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolButton.m; sourceTree = "<group>"; };
 		0765AB04242CE573007C11F9 /* ToolButtonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolButtonView.h; sourceTree = "<group>"; };
 		0765AB05242CE573007C11F9 /* ToolButtonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolButtonView.m; sourceTree = "<group>"; };
+		489F2388242F235F004BB723 /* ModulesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModulesCell.h; sourceTree = "<group>"; };
+		489F2389242F2366004BB723 /* ModulesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModulesCell.m; sourceTree = "<group>"; };
+		489F238B242F236C004BB723 /* ModulesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModulesCell.xib; sourceTree = "<group>"; };
+		489F238D242F295D004BB723 /* ColorUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorUtil.m; sourceTree = "<group>"; };
+		489F2390242F2991004BB723 /* ColorUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorUtil.h; sourceTree = "<group>"; };
 		48A32D25242B210800A6B6DA /* meituan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = meituan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A32D28242B210800A6B6DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		48A32D29242B210800A6B6DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -135,9 +143,21 @@
 			children = (
 				48A32D5D242C901600A6B6DA /* ModulesView.xib */,
 				48A32D65242C9ED700A6B6DA /* ModulesViewController.h */,
+				489F238B242F236C004BB723 /* ModulesCell.xib */,
+				489F2389242F2366004BB723 /* ModulesCell.m */,
+				489F2388242F235F004BB723 /* ModulesCell.h */,
 				48A32D63242C9EB000A6B6DA /* ModulesViewController.m */,
 			);
 			path = modules;
+			sourceTree = "<group>";
+		};
+		489F238F242F2966004BB723 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				489F238D242F295D004BB723 /* ColorUtil.m */,
+				489F2390242F2991004BB723 /* ColorUtil.h */,
+			);
+			path = util;
 			sourceTree = "<group>";
 		};
 		48A32D1C242B210700A6B6DA = {
@@ -163,6 +183,7 @@
 		48A32D27242B210800A6B6DA /* meituan */ = {
 			isa = PBXGroup;
 			children = (
+				489F238F242F2966004BB723 /* util */,
 				F5F8F0D9242D9EBF005F5F39 /* swiper */,
 				0765AAF8242CCB29007C11F9 /* toolbutton */,
 				0765AAEC242CBF24007C11F9 /* head */,
@@ -318,6 +339,7 @@
 				0765AAF2242CC0CD007C11F9 /* HotView.xib in Resources */,
 				48A32D5E242C901600A6B6DA /* ModulesView.xib in Resources */,
 				48A32D32242B210800A6B6DA /* Assets.xcassets in Resources */,
+				489F238C242F236C004BB723 /* ModulesCell.xib in Resources */,
 				48A32D30242B210800A6B6DA /* Main.storyboard in Resources */,
 				0765AAFC242CCBA5007C11F9 /* OneToolButtonView.xib in Resources */,
 				0765AAF7242CC16E007C11F9 /* HeaderView.xib in Resources */,
@@ -350,7 +372,9 @@
 				48A32D2D242B210800A6B6DA /* ViewController.m in Sources */,
 				0765AAFD242CCBA5007C11F9 /* OneToolButtonView.m in Sources */,
 				F5F8F0E8242DA1D0005F5F39 /* SwiperViewController.m in Sources */,
+				489F238E242F295D004BB723 /* ColorUtil.m in Sources */,
 				48A32D38242B210800A6B6DA /* main.m in Sources */,
+				489F238A242F2366004BB723 /* ModulesCell.m in Sources */,
 				48A32D2A242B210800A6B6DA /* AppDelegate.m in Sources */,
 				48A32D64242C9EB000A6B6DA /* ModulesViewController.m in Sources */,
 				0765AB00242CCC19007C11F9 /* ToolButton.m in Sources */,

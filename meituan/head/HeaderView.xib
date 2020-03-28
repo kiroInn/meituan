@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="cXZ-BO-qe1">
+        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" id="cXZ-BO-qe1">
             <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <point key="canvasLocation" x="71" y="98"/>
@@ -27,9 +29,7 @@
                         <constraint firstAttribute="height" constant="34" id="kKy-BG-NY5"/>
                     </constraints>
                     <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <state key="normal" image="plus" catalog="system">
-                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25"/>
-                    </state>
+                    <state key="normal" image="plus"/>
                 </button>
                 <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="tailTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bpv-Fk-XIc">
                     <rect key="frame" x="70" y="44" width="80" height="18"/>
@@ -47,7 +47,6 @@
                                 </attributes>
                             </fragment>
                         </attributedString>
-                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                     </state>
                 </button>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wxtx" translatesAutoresizingMaskIntoConstraints="NO" id="iLc-fN-hQX">
@@ -72,23 +71,21 @@
                         <constraint firstAttribute="width" constant="34" id="ORw-Uk-SgX"/>
                     </constraints>
                     <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <state key="normal" image="mic.fill" catalog="system">
-                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
-                    </state>
+                    <state key="normal" image="scan"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLL-sv-zSH" userLabel="Search Button" propertyAccessControl="none">
                     <rect key="frame" x="160" y="44" width="160" height="34"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="34" id="gcX-ca-JL6"/>
                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="vMI-jM-qWu"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                    <color key="tintColor" systemColor="tertiaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="tintColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                     <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
                     <inset key="imageEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    <state key="normal" title="时事新闻" image="magnifyingglass" catalog="system">
-                        <color key="titleColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="时事新闻" image="mic">
+                        <color key="titleColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -97,7 +94,7 @@
                     </userDefinedRuntimeAttributes>
                 </button>
             </subviews>
-            <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="meb-x5-dRh" firstAttribute="top" secondItem="1RC-xn-LVw" secondAttribute="top" id="8JD-wH-Ixr"/>
                 <constraint firstItem="meb-x5-dRh" firstAttribute="leading" secondItem="GhL-eL-U4b" secondAttribute="trailing" constant="5" id="A36-3x-6ue"/>
@@ -113,17 +110,14 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="1RC-xn-LVw"/>
-            <connections>
-                <outlet property="searchButton" destination="aLL-sv-zSH" id="YsL-aj-fs4"/>
-            </connections>
             <point key="canvasLocation" x="-353.62318840579712" y="-121.20535714285714"/>
         </view>
     </objects>
     <resources>
         <image name="down" width="16" height="16"/>
-        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
-        <image name="mic.fill" catalog="system" width="54" height="64"/>
-        <image name="plus" catalog="system" width="64" height="56"/>
+        <image name="mic" width="16" height="16"/>
+        <image name="plus" width="16" height="16"/>
+        <image name="scan" width="64" height="64"/>
         <image name="wxtx" width="870" height="900"/>
     </resources>
 </document>
