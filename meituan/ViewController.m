@@ -12,7 +12,7 @@
 #import "ToolButton.h"
 #import "OneToolButtonView.h"
 #import "SwiperViewController.h"
-#import "util/ColorUtil.h"
+#import "ColorUtil.h"
 
 
 @interface ViewController ()

@@ -13,7 +13,7 @@
 
 @interface ModulesViewController ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
-@property (weak, nonatomic) IBOutlet UICollectionView *menuCollectionViews;
+@property (weak, nonatomic) IBOutlet UICollectionView *modulesCollectionViews;
 
 @end
 
@@ -26,15 +26,15 @@
     [self setGradientLayer];
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
     layout.minimumLineSpacing = 10.0;
-    layout.minimumInteritemSpacing = 10.0;
-    layout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
-    self.menuCollectionViews.collectionViewLayout = layout;
-    self.menuCollectionViews.layer.cornerRadius = 20.0;
-    self.menuCollectionViews.delegate = self;
-    self.menuCollectionViews.dataSource = self;
-    [self.menuCollectionViews registerClass:[ModulesCell class] forCellWithReuseIdentifier:@"modulesCell"];
-    _menuCollectionViews.bounds = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 240);
-    [self.menuCollectionViews registerNib:[UINib nibWithNibName:@"ModulesCell" bundle:nil] forCellWithReuseIdentifier:@"ModulesCell"];
+    layout.minimumInteritemSpacing = 0;
+    layout.sectionInset = UIEdgeInsetsMake(8, 0, 8, 0);
+    self.modulesCollectionViews.collectionViewLayout = layout;
+    self.modulesCollectionViews.layer.cornerRadius = 20.0;
+    self.modulesCollectionViews.delegate = self;
+    self.modulesCollectionViews.dataSource = self;
+    [self.modulesCollectionViews registerClass:[ModulesCell class] forCellWithReuseIdentifier:@"modulesCell"];
+    _modulesCollectionViews.bounds = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 270);
+    [self.modulesCollectionViews registerNib:[UINib nibWithNibName:@"ModulesCell" bundle:nil] forCellWithReuseIdentifier:@"ModulesCell"];
 }
 
 - (void)setGradientLayer {
@@ -49,7 +49,7 @@
 
 
 - (nonnull __kindof UICollectionViewCell *)collectionView:(nonnull UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    ModulesCell * cell = [self.menuCollectionViews dequeueReusableCellWithReuseIdentifier:@"modulesCell" forIndexPath:indexPath];
+    ModulesCell * cell = [self.modulesCollectionViews dequeueReusableCellWithReuseIdentifier:@"modulesCell" forIndexPath:indexPath];
     return cell;
 }
 
@@ -59,7 +59,7 @@
 
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
-    return CGSizeMake((screenWidth - 100) / 5, 68);
+    return CGSizeMake((screenWidth - 50) / 5, 70);
 }
 
 @end

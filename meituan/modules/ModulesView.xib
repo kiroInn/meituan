@@ -12,18 +12,18 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ModulesViewController">
             <connections>
-                <outlet property="menuCollectionViews" destination="J66-iA-gkQ" id="jco-Rr-QJV"/>
+                <outlet property="modulesCollectionViews" destination="J66-iA-gkQ" id="jco-Rr-QJV"/>
                 <outlet property="view" destination="iN0-l3-epB" id="nFJ-GP-2fp"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="260"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="270"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="J66-iA-gkQ">
-                    <rect key="frame" x="10" y="54" width="394" height="196"/>
-                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <rect key="frame" x="10" y="54" width="394" height="206"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NSv-rC-iVA">
                         <size key="itemSize" width="50" height="50"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -32,6 +32,7 @@
                     </collectionViewFlowLayout>
                 </collectionView>
             </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="J66-iA-gkQ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="Pdg-H4-xNE"/>
                 <constraint firstItem="J66-iA-gkQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="ZuC-CK-sIH"/>
