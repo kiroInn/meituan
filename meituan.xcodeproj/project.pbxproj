@@ -14,6 +14,7 @@
 		0765AAFD242CCBA5007C11F9 /* OneToolButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0765AAFA242CCBA5007C11F9 /* OneToolButtonView.m */; };
 		0765AB00242CCC19007C11F9 /* ToolButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0765AAFF242CCC19007C11F9 /* ToolButton.m */; };
 		0765AB06242CE573007C11F9 /* ToolButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0765AB05242CE573007C11F9 /* ToolButtonView.m */; };
+		07E0F435242F7CAC009AE05C /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E0F434242F7CAC009AE05C /* HeaderView.m */; };
 		489F238A242F2366004BB723 /* ModulesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 489F2389242F2366004BB723 /* ModulesCell.m */; };
 		489F238C242F236C004BB723 /* ModulesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 489F238B242F236C004BB723 /* ModulesCell.xib */; };
 		489F238E242F295D004BB723 /* ColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 489F238D242F295D004BB723 /* ColorUtil.m */; };
@@ -60,6 +61,8 @@
 		0765AAFF242CCC19007C11F9 /* ToolButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolButton.m; sourceTree = "<group>"; };
 		0765AB04242CE573007C11F9 /* ToolButtonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolButtonView.h; sourceTree = "<group>"; };
 		0765AB05242CE573007C11F9 /* ToolButtonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolButtonView.m; sourceTree = "<group>"; };
+		07E0F433242F7CAC009AE05C /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
+		07E0F434242F7CAC009AE05C /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
 		489F2388242F235F004BB723 /* ModulesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModulesCell.h; sourceTree = "<group>"; };
 		489F2389242F2366004BB723 /* ModulesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModulesCell.m; sourceTree = "<group>"; };
 		489F238B242F236C004BB723 /* ModulesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModulesCell.xib; sourceTree = "<group>"; };
@@ -118,6 +121,8 @@
 		0765AAEC242CBF24007C11F9 /* head */ = {
 			isa = PBXGroup;
 			children = (
+				07E0F433242F7CAC009AE05C /* HeaderView.h */,
+				07E0F434242F7CAC009AE05C /* HeaderView.m */,
 				0765AAF6242CC16E007C11F9 /* HeaderView.xib */,
 				0765AAED242CC0CC007C11F9 /* HotView.xib */,
 			);
@@ -374,6 +379,7 @@
 				F5F8F0E8242DA1D0005F5F39 /* SwiperViewController.m in Sources */,
 				489F238E242F295D004BB723 /* ColorUtil.m in Sources */,
 				48A32D38242B210800A6B6DA /* main.m in Sources */,
+				07E0F435242F7CAC009AE05C /* HeaderView.m in Sources */,
 				489F238A242F2366004BB723 /* ModulesCell.m in Sources */,
 				48A32D2A242B210800A6B6DA /* AppDelegate.m in Sources */,
 				48A32D64242C9EB000A6B6DA /* ModulesViewController.m in Sources */,
