@@ -36,10 +36,6 @@
     _modulesCollectionViews.bounds = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 270);
 }
 
--(BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds{
-    return YES;
-}
-
 - (void)setGradientLayer {
     CAGradientLayer *layer = [CAGradientLayer layer];
     layer.startPoint = CGPointMake(0, 0);

@@ -9,9 +9,4 @@
 #import <UIKit/UIKit.h>
 
 @interface ModulesCell : UICollectionViewCell
-
-//+ (instancetype)cellWithCollectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath;
-//- (CGFloat)calculateHeight;
-//+(ModulesCell *)instanceFromNib;
-
 @end
