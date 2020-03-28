@@ -25,7 +25,7 @@
     return self;
 }
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-}
+//- (void)awakeFromNib {
+//    [super awakeFromNib];
+//}
 @end

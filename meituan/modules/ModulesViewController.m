@@ -27,14 +27,17 @@
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
     layout.minimumLineSpacing = 10.0;
     layout.minimumInteritemSpacing = 0;
-    layout.sectionInset = UIEdgeInsetsMake(8, 0, 8, 0);
+    layout.sectionInset = UIEdgeInsetsMake(15, 0, 0, 0);
     self.modulesCollectionViews.collectionViewLayout = layout;
     self.modulesCollectionViews.layer.cornerRadius = 20.0;
     self.modulesCollectionViews.delegate = self;
     self.modulesCollectionViews.dataSource = self;
     [self.modulesCollectionViews registerClass:[ModulesCell class] forCellWithReuseIdentifier:@"modulesCell"];
     _modulesCollectionViews.bounds = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 270);
-    [self.modulesCollectionViews registerNib:[UINib nibWithNibName:@"ModulesCell" bundle:nil] forCellWithReuseIdentifier:@"ModulesCell"];
+}
+
+-(BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds{
+    return YES;
 }
 
 - (void)setGradientLayer {

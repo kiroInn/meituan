@@ -51,13 +51,15 @@
     _toolButtonView.backgroundColor =  ssRGBHex(0xffcf01);
     NSLog(@"_toolButtonView========%@", NSStringFromCGRect(_toolButtonView.frame));
     [self.view addSubview:_toolButtonView];
-
-
-    UIView *modulesView = [[ModulesViewController alloc] initWithNibName:@"ModulesView" bundle:nil].view;
+    
+    UIViewController *modulesController = [[ModulesViewController alloc] initWithNibName:@"ModulesView" bundle:nil];
+    UIView *modulesView = modulesController.view;
     rect = modulesView.frame;
     rect.origin.y = _toolButtonView.frame.origin.y + _toolButtonView.frame.size.height;
     modulesView.frame = rect;
     [self.view addSubview:modulesView];
+    [self addChildViewController:modulesController];
+    [modulesController didMoveToParentViewController:self];
 
     UIView *swiperView = [[SwiperViewController alloc] initWithNibName:@"SwiperView" bundle:nil].view;
     rect = swiperView.frame;
