@@ -13,7 +13,7 @@
 #import "OneToolButtonView.h"
 #import "SwiperViewController.h"
 #import "ColorUtil.h"
-
+#import "StoreListViewController.h"
 
 @interface ViewController ()
 @property(nonatomic, weak) IBOutlet UIView *headerView;
@@ -27,6 +27,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor colorWithRed:204 green:204 blue:204 alpha:1];
     // Do any additional setup after loading the view.
     NSBundle *rootBundle = [NSBundle mainBundle];
     _headerView = [[rootBundle loadNibNamed:@"HeaderView" owner:nil options:nil] lastObject];
@@ -51,7 +52,7 @@
     _toolButtonView.backgroundColor =  ssRGBHex(0xffcf01);
     NSLog(@"_toolButtonView========%@", NSStringFromCGRect(_toolButtonView.frame));
     [self.view addSubview:_toolButtonView];
-    
+
     UIViewController *modulesController = [[ModulesViewController alloc] initWithNibName:@"ModulesView" bundle:nil];
     UIView *modulesView = modulesController.view;
     rect = modulesView.frame;
@@ -61,11 +62,24 @@
     [self addChildViewController:modulesController];
     [modulesController didMoveToParentViewController:self];
 
+    [[NSBundle mainBundle] loadNibNamed:@"BottomView" owner:self options:nil];
+    rect = modulesView.frame;
+    rect.origin.y = modulesView.frame.size.height + modulesView.frame.origin.y;
+    _bottemView.frame = rect;
+    [self.view addSubview:_bottemView];
+
     UIView *swiperView = [[SwiperViewController alloc] initWithNibName:@"SwiperView" bundle:nil].view;
     rect = swiperView.frame;
     rect.origin.x = 10;
     rect.origin.y = modulesView.frame.origin.y + modulesView.frame.size.height + 20;
     swiperView.frame = rect;
     [self.view addSubview:swiperView];
+
+    UIView *storeListView = [[StoreListViewController alloc] initWithNibName:@"StoreListView" bundle:nil].view;
+    rect = storeListView.frame;
+    rect.origin.x = 10;
+    rect.origin.y = swiperView.frame.origin.y + swiperView.frame.size.height + 20;
+    storeListView.frame = rect;
+    [self.view addSubview:storeListView];
 }
 @end

@@ -34,6 +34,8 @@
 		48A32D64242C9EB000A6B6DA /* ModulesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A32D63242C9EB000A6B6DA /* ModulesViewController.m */; };
 		F5F8F0E8242DA1D0005F5F39 /* SwiperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F8F0E6242DA1D0005F5F39 /* SwiperViewController.m */; };
 		F5F8F0EF242DAD8C005F5F39 /* SwiperView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5F8F0EE242DAD8C005F5F39 /* SwiperView.xib */; };
+		F5F8F104242DD7A8005F5F39 /* StoreListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F8F102242DD7A8005F5F39 /* StoreListViewController.m */; };
+		F5F8F105242DD7A8005F5F39 /* StoreListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5F8F103242DD7A8005F5F39 /* StoreListView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +101,9 @@
 		F5F8F0E5242DA1D0005F5F39 /* SwiperViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiperViewController.h; sourceTree = "<group>"; };
 		F5F8F0E6242DA1D0005F5F39 /* SwiperViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwiperViewController.m; sourceTree = "<group>"; };
 		F5F8F0EE242DAD8C005F5F39 /* SwiperView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwiperView.xib; sourceTree = "<group>"; };
+		F5F8F101242DD7A8005F5F39 /* StoreListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreListViewController.h; sourceTree = "<group>"; };
+		F5F8F102242DD7A8005F5F39 /* StoreListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreListViewController.m; sourceTree = "<group>"; };
+		F5F8F103242DD7A8005F5F39 /* StoreListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreListView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +214,7 @@
 		48A32D27242B210800A6B6DA /* meituan */ = {
 			isa = PBXGroup;
 			children = (
+				F5F8F100242DD77D005F5F39 /* storeList */,
 				489F238F242F2966004BB723 /* util */,
 				F5F8F0D9242D9EBF005F5F39 /* swiper */,
 				0765AAF8242CCB29007C11F9 /* toolbutton */,
@@ -255,6 +261,16 @@
 				F5F8F0EE242DAD8C005F5F39 /* SwiperView.xib */,
 			);
 			path = swiper;
+			sourceTree = "<group>";
+		};
+		F5F8F100242DD77D005F5F39 /* storeList */ = {
+			isa = PBXGroup;
+			children = (
+				F5F8F101242DD7A8005F5F39 /* StoreListViewController.h */,
+				F5F8F102242DD7A8005F5F39 /* StoreListViewController.m */,
+				F5F8F103242DD7A8005F5F39 /* StoreListView.xib */,
+			);
+			path = storeList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,6 +387,7 @@
 				0765AAFC242CCBA5007C11F9 /* OneToolButtonView.xib in Resources */,
 				0765AAF7242CC16E007C11F9 /* HeaderView.xib in Resources */,
 				0765AAEB242CBE51007C11F9 /* toolButton.plist in Resources */,
+				F5F8F105242DD7A8005F5F39 /* StoreListView.xib in Resources */,
 				48A32D62242C98BB00A6B6DA /* BottomView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +414,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48A32D2D242B210800A6B6DA /* ViewController.m in Sources */,
+				F5F8F104242DD7A8005F5F39 /* StoreListViewController.m in Sources */,
 				0765AAFD242CCBA5007C11F9 /* OneToolButtonView.m in Sources */,
 				F5F8F0E8242DA1D0005F5F39 /* SwiperViewController.m in Sources */,
 				489F238E242F295D004BB723 /* ColorUtil.m in Sources */,

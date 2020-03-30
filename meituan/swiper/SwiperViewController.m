@@ -81,6 +81,7 @@
     UIImage *uiImage = [UIImage imageNamed:_swiperImageNames[indexPath.item]];
     UIImageView *uiImageView = [[UIImageView alloc] initWithImage:uiImage];
     uiImageView.layer.cornerRadius = 8;
+    cell.backgroundView = uiImageView;
     [cell addSubview:uiImageView];
     return cell;
 }
