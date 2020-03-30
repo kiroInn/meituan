@@ -20,7 +20,10 @@
 @property(nonatomic, strong) IBOutlet UIView *toolButtonView;
 @property(nonatomic, weak) IBOutlet UIView *hotView;
 @property(nonatomic, weak) IBOutlet UIView *modulesView;
+@property(nonatomic, weak) IBOutlet UIView *swiperView;
+@property(nonatomic, weak) IBOutlet UIView *storeListView;
 @property(nonatomic, weak) IBOutlet UIView *bottemView;
+@property(nonatomic, strong) IBOutlet UIScrollView *scrollView;
 @end
 
 @implementation ViewController
@@ -35,13 +38,25 @@
     _headerView.frame = rect;
     [self.view addSubview:_headerView];
 
+    _scrollView = [UIScrollView new];
+    _scrollView.scrollEnabled = YES;
+    _scrollView.userInteractionEnabled = YES;
+    _scrollView.alwaysBounceVertical = YES;
+    rect = _scrollView.frame;
+    CGFloat headerEndPoint = _headerView.frame.origin.y + _headerView.frame.size.height;
+    rect.origin.y = headerEndPoint;
+    rect.size.width = [UIScreen mainScreen].bounds.size.width;
+    rect.size.height = [UIScreen mainScreen].bounds.size.height - headerEndPoint - 20;
+    _scrollView.frame = rect;
+    
     _hotView = [[rootBundle loadNibNamed:@"HotView" owner:nil options:nil] lastObject];
     rect = _headerView.frame;
-    rect.origin.y = _headerView.frame.origin.y + _headerView.frame.size.height;
+    rect.origin.y = 0;
+    
     rect.size.height = _hotView.frame.size.height + 20;
     NSLog(@"_hotView =====%@", NSStringFromCGRect(rect));
     _hotView.frame = rect;
-    [self.view addSubview:_hotView];
+    [_scrollView addSubview:_hotView];
 
     rect = _hotView.frame;
     rect.origin.y = _hotView.frame.origin.y + _hotView.frame.size.height;
@@ -51,29 +66,42 @@
     _toolButtonView = [[ToolButtonView alloc] initWithFrame:rect];
     _toolButtonView.backgroundColor =  ssRGBHex(0xffcf01);
     NSLog(@"_toolButtonView========%@", NSStringFromCGRect(_toolButtonView.frame));
-    [self.view addSubview:_toolButtonView];
+    [_scrollView addSubview:_toolButtonView];
 
     UIViewController *modulesController = [[ModulesViewController alloc] initWithNibName:@"ModulesView" bundle:nil];
-    UIView *modulesView = modulesController.view;
-    rect = modulesView.frame;
+    _modulesView = modulesController.view;
+    rect = _modulesView.frame;
     rect.origin.y = _toolButtonView.frame.origin.y + _toolButtonView.frame.size.height;
-    modulesView.frame = rect;
-    [self.view addSubview:modulesView];
+    _modulesView.frame = rect;
+    [_scrollView addSubview:_modulesView];
     [self addChildViewController:modulesController];
     [modulesController didMoveToParentViewController:self];
 
-    UIView *swiperView = [[SwiperViewController alloc] initWithNibName:@"SwiperView" bundle:nil].view;
-    rect = swiperView.frame;
+    _swiperView = [[SwiperViewController alloc] initWithNibName:@"SwiperView" bundle:nil].view;
+    rect = _swiperView.frame;
     rect.origin.x = 10;
-    rect.origin.y = modulesView.frame.origin.y + modulesView.frame.size.height + 20;
-    swiperView.frame = rect;
-    [self.view addSubview:swiperView];
+    rect.origin.y = _modulesView.frame.origin.y + _modulesView.frame.size.height;
+    _swiperView.frame = rect;
+    [_scrollView addSubview:_swiperView];
 
-    UIView *storeListView = [[StoreListViewController alloc] initWithNibName:@"StoreListView" bundle:nil].view;
-    rect = storeListView.frame;
+    _storeListView = [[StoreListViewController alloc] initWithNibName:@"StoreListView" bundle:nil].view;
+    rect = _storeListView.frame;
     rect.origin.x = 10;
-    rect.origin.y = swiperView.frame.origin.y + swiperView.frame.size.height + 20;
-    storeListView.frame = rect;
-    [self.view addSubview:storeListView];
+    rect.origin.y = _swiperView.frame.origin.y + _swiperView.frame.size.height + 20;
+    _storeListView.frame = rect;
+    [_scrollView addSubview:_storeListView];
+    [self.view addSubview:_scrollView];
 }
+
+- (void)viewDidAppear:(BOOL)animated {
+    UICollectionView *storeList = (UICollectionView *)_storeListView;
+    
+    CGFloat contentSizeOfScrollView =  _hotView.bounds.size.height
+        + _toolButtonView.bounds.size.height
+        + _modulesView.bounds.size.height
+        + _swiperView.bounds.size.height
+        + storeList.collectionViewLayout.collectionViewContentSize.height + 60;
+    [_scrollView setContentSize:CGSizeMake(_scrollView.bounds.size.width, contentSizeOfScrollView)];
+}
+
 @end
