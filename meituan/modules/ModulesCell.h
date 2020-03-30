@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ModulesModel.h"
 
 @interface ModulesCell : UICollectionViewCell
+
 @end

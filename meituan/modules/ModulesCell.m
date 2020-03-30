@@ -6,6 +6,7 @@
 //  Copyright © 2020 Kiro. All rights reserved.
 //
 #import "ModulesCell.h"
+#import "ModulesModel.h"
 
 @interface ModulesCell ()
 @property (weak, nonatomic) IBOutlet UILabel *title;

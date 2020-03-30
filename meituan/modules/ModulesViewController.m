@@ -10,6 +10,7 @@
 #import "ModulesViewController.h"
 #import "ModulesCell.h"
 #import "ColorUtil.h"
+#import "more/MoreViewController.h"
 
 @interface ModulesViewController ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
@@ -48,8 +49,7 @@
 
 
 - (nonnull __kindof UICollectionViewCell *)collectionView:(nonnull UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    ModulesCell * cell = [self.modulesCollectionViews dequeueReusableCellWithReuseIdentifier:@"modulesCell" forIndexPath:indexPath];
-    return cell;
+    return [self.modulesCollectionViews dequeueReusableCellWithReuseIdentifier:@"modulesCell" forIndexPath:indexPath];
 }
 
 - (NSInteger)collectionView:(nonnull UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
@@ -59,6 +59,11 @@
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
     return CGSizeMake((screenWidth - 50) / 5, 70);
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+        MoreViewController *moreViewController = [[UIStoryboard storyboardWithName:@"MoreView"bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"MoreView"];
+        [self.navigationController pushViewController:moreViewController animated:YES];
 }
 
 @end
