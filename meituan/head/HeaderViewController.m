@@ -8,11 +8,13 @@
 
 #import "HeaderViewController.h"
 #import "SearchPageViewController.h"
+#import "EWAddressViewController.h"
 
 @interface HeaderViewController ()
 @property(strong,nonatomic) NSArray *array;
 @property (weak, nonatomic) IBOutlet UIButton *searchButton;
 @property(strong,nonatomic)  NSTimer *timer;
+@property (weak, nonatomic) IBOutlet UIButton *location;
 
 @end
 
@@ -30,6 +32,23 @@
     // Do any additional setup after loading the view.
 }
 
+- (IBAction)selectLocation:(id)sender {
+     EWAddressViewController *VC = [[EWAddressViewController alloc]init];
+        ///保证弹出viewController背景色为透明
+        self.definesPresentationContext = YES;
+        VC.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+        ///block弱引用防止循环引用.
+        __weak typeof(self) weakSelf = self;
+        VC.backLocationString = ^(NSString *address, NSString *province, NSString *city, NSString *area) {
+            // 返回选择数据,地址,省,市,区
+            NSLog(@"location = %@",address);
+            NSArray *array = [address componentsSeparatedByString:@" "];
+//            [array lastObject];
+            [weakSelf.location setTitle:[array lastObject] forState:UIControlStateNormal];
+        };
+        [self.parentViewController presentViewController:VC animated:true completion:nil];
+
+}
 
 -(void) task{
     static int count=0;

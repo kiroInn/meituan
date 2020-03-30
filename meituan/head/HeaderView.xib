@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderViewController">
             <connections>
+                <outlet property="location" destination="Bpv-Fk-XIc" id="94U-Xs-vHn"/>
                 <outlet property="searchButton" destination="aLL-sv-zSH" id="ydc-d9-CqA"/>
                 <outlet property="view" destination="zqo-j6-bn4" id="E9s-Eo-V3J"/>
             </connections>
@@ -34,23 +35,20 @@
                     <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                     <state key="normal" image="plus"/>
                 </button>
-                <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="tailTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bpv-Fk-XIc">
+                <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bpv-Fk-XIc">
                     <rect key="frame" x="70" y="0.0" width="80" height="18"/>
                     <constraints>
                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="80" id="bV5-89-UL3"/>
                         <constraint firstAttribute="height" constant="18" id="ij1-GX-S7w"/>
                     </constraints>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="16"/>
                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <state key="normal" image="down">
-                        <attributedString key="attributedTitle">
-                            <fragment content="西安xianxian">
-                                <attributes>
-                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <font key="NSFont" size="16" name="STHeitiSC-Medium"/>
-                                </attributes>
-                            </fragment>
-                        </attributedString>
+                    <state key="normal" title="西安xianxian" image="down">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="selectLocation:" destination="-1" eventType="touchUpInside" id="d8F-uP-Yp7"/>
+                    </connections>
                 </button>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wxtx" translatesAutoresizingMaskIntoConstraints="NO" id="iLc-fN-hQX">
                     <rect key="frame" x="20" y="0.0" width="34" height="34"/>
