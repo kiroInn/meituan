@@ -30,9 +30,6 @@
     CGFloat swiperWidth = [UIScreen mainScreen].bounds.size.width - 20;
     CGFloat swiperHeight = swiperWidth * 219 / 700;
     _swiperView.bounds = CGRectMake(0, 0, swiperWidth, swiperHeight);
-}
-
--(void)viewWillAppear:(BOOL)animated {
     [self performSelector:@selector(task) withObject:nil afterDelay:3];
 }
 

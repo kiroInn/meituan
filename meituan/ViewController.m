@@ -62,12 +62,6 @@
     [self addChildViewController:modulesController];
     [modulesController didMoveToParentViewController:self];
 
-    [[NSBundle mainBundle] loadNibNamed:@"BottomView" owner:self options:nil];
-    rect = modulesView.frame;
-    rect.origin.y = modulesView.frame.size.height + modulesView.frame.origin.y;
-    _bottemView.frame = rect;
-    [self.view addSubview:_bottemView];
-
     UIView *swiperView = [[SwiperViewController alloc] initWithNibName:@"SwiperView" bundle:nil].view;
     rect = swiperView.frame;
     rect.origin.x = 10;
