@@ -26,7 +26,7 @@
     _STORE_LIST_COUNT = _storeListImageNames.count;
     _storeListView.layer.cornerRadius = 8;
     [_storeListView registerClass:UICollectionViewCell.class forCellWithReuseIdentifier:@"storeListCell"];
-    _STORE_LIST_WIDTH = [UIScreen mainScreen].bounds.size.width - 40;
+    _STORE_LIST_WIDTH = [UIScreen mainScreen].bounds.size.width - 20;
     _STORE_CELL_WIDTH = (_STORE_LIST_WIDTH - 20) / 2;
     
     CGRect rect = _storeListView.frame;
