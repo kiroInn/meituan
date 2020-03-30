@@ -74,6 +74,7 @@
     rect.size.width = [UIScreen mainScreen].bounds.size.width;
     rect.size.height = [UIScreen mainScreen].bounds.size.height - headerEndPoint - 20;
     _scrollView.frame = rect;
+    [self.view addSubview:_scrollView];
 }
 
 - (void)addHotView {
@@ -123,7 +124,6 @@
     rect.origin.y = _swiperView.frame.origin.y + _swiperView.frame.size.height + 20;
     _storeListView.frame = rect;
     [_scrollView addSubview:_storeListView];
-    [self.view addSubview:_scrollView];
 }
 
 @end
