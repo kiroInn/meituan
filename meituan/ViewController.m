@@ -14,6 +14,7 @@
 #import "SwiperViewController.h"
 #import "ColorUtil.h"
 #import "StoreListViewController.h"
+#import "HeaderViewController.h"
 
 @interface ViewController ()
 @property(nonatomic, weak) IBOutlet UIView *headerView;
@@ -56,8 +57,15 @@
 }
 
 - (void)addHeaderView {
-    NSBundle *rootBundle = [NSBundle mainBundle];
-    _headerView = [[rootBundle loadNibNamed:@"HeaderView" owner:nil options:nil] lastObject];
+    UIViewController *headerViewController = [[HeaderViewController alloc] initWithNibName:@"HeaderView" bundle:nil];
+    _headerView= headerViewController.view;
+   _headerView.backgroundColor = self.view.backgroundColor = [UIColor systemYellowColor];
+    _headerView.frame = CGRectMake(0, 44, self.view.frame.size.width, 40);
+    [_scrollView addSubview:_headerView];
+    [self addChildViewController:headerViewController];
+    [headerViewController didMoveToParentViewController:self];
+    
+    
     CGRect rect = _headerView.frame;
     _headerView.frame = rect;
     [self.view addSubview:_headerView];

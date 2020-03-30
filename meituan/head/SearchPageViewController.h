@@ -1,8 +1,8 @@
 //
-//  HeaderView.h
+//  SearchPageViewController.h
 //  meituan
 //
-//  Created by Yong Ma on 2020/3/27.
+//  Created by Yong Ma on 2020/3/30.
 //  Copyright © 2020 Kiro. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HeaderView:UIView
+@interface SearchPageViewController : UIViewController
 
 @end
 

@@ -8,7 +8,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderViewController">
+            <connections>
+                <outlet property="searchButton" destination="aLL-sv-zSH" id="ydc-d9-CqA"/>
+                <outlet property="view" destination="zqo-j6-bn4" id="E9s-Eo-V3J"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" id="cXZ-BO-qe1">
             <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -16,11 +21,11 @@
             <point key="canvasLocation" x="71" y="98"/>
         </activityIndicatorView>
         <view contentMode="scaleToFill" id="zqo-j6-bn4" customClass="HeaderView">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meb-x5-dRh" userLabel="Plus Button">
-                    <rect key="frame" x="374" y="44" width="30" height="34"/>
+                    <rect key="frame" x="374" y="0.0" width="30" height="34"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="30" id="OQJ-8L-k0W"/>
@@ -30,7 +35,7 @@
                     <state key="normal" image="plus"/>
                 </button>
                 <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="tailTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bpv-Fk-XIc">
-                    <rect key="frame" x="70" y="44" width="80" height="18"/>
+                    <rect key="frame" x="70" y="0.0" width="80" height="18"/>
                     <constraints>
                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="80" id="bV5-89-UL3"/>
                         <constraint firstAttribute="height" constant="18" id="ij1-GX-S7w"/>
@@ -48,21 +53,14 @@
                     </state>
                 </button>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wxtx" translatesAutoresizingMaskIntoConstraints="NO" id="iLc-fN-hQX">
-                    <rect key="frame" x="20" y="44" width="34" height="34"/>
+                    <rect key="frame" x="20" y="0.0" width="34" height="34"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="34" id="3K9-QF-OUP"/>
                         <constraint firstAttribute="width" constant="34" id="LNU-fe-ynG"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="晴 24°C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UWa-6Y-xvC">
-                    <rect key="frame" x="70" y="64" width="59" height="12"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GhL-eL-U4b" userLabel="Mic Button">
-                    <rect key="frame" x="335" y="44" width="34" height="34"/>
+                    <rect key="frame" x="335" y="0.0" width="34" height="34"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="34" id="7fE-8P-wfJ"/>
@@ -72,7 +70,7 @@
                     <state key="normal" image="mic"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLL-sv-zSH" userLabel="Search Button" propertyAccessControl="none">
-                    <rect key="frame" x="160" y="44" width="160" height="34"/>
+                    <rect key="frame" x="160" y="0.0" width="160" height="34"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="34" id="gcX-ca-JL6"/>
@@ -90,27 +88,34 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="toSearch:" destination="-1" eventType="touchUpInside" id="XPx-wR-c0l"/>
+                    </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="晴 24°C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UWa-6Y-xvC">
+                    <rect key="frame" x="70" y="22" width="59" height="12"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="meb-x5-dRh" firstAttribute="top" secondItem="1RC-xn-LVw" secondAttribute="top" id="8JD-wH-Ixr"/>
+                <constraint firstItem="meb-x5-dRh" firstAttribute="top" secondItem="zqo-j6-bn4" secondAttribute="top" id="8JD-wH-Ixr"/>
                 <constraint firstItem="meb-x5-dRh" firstAttribute="leading" secondItem="GhL-eL-U4b" secondAttribute="trailing" constant="5" id="A36-3x-6ue"/>
-                <constraint firstItem="GhL-eL-U4b" firstAttribute="top" secondItem="1RC-xn-LVw" secondAttribute="top" id="CbT-W8-X4I"/>
-                <constraint firstItem="aLL-sv-zSH" firstAttribute="top" secondItem="1RC-xn-LVw" secondAttribute="top" id="L2b-K0-9yA"/>
-                <constraint firstItem="Bpv-Fk-XIc" firstAttribute="top" secondItem="1RC-xn-LVw" secondAttribute="top" id="Oq9-eZ-JXK"/>
+                <constraint firstItem="GhL-eL-U4b" firstAttribute="top" secondItem="zqo-j6-bn4" secondAttribute="top" id="CbT-W8-X4I"/>
+                <constraint firstItem="aLL-sv-zSH" firstAttribute="top" secondItem="zqo-j6-bn4" secondAttribute="top" id="L2b-K0-9yA"/>
+                <constraint firstItem="Bpv-Fk-XIc" firstAttribute="top" secondItem="zqo-j6-bn4" secondAttribute="top" id="Oq9-eZ-JXK"/>
+                <constraint firstItem="UWa-6Y-xvC" firstAttribute="bottom" secondItem="iLc-fN-hQX" secondAttribute="bottom" id="TZl-DO-cDD"/>
                 <constraint firstItem="iLc-fN-hQX" firstAttribute="leading" secondItem="1RC-xn-LVw" secondAttribute="leading" constant="20" id="Yjt-q8-95r"/>
-                <constraint firstItem="iLc-fN-hQX" firstAttribute="top" secondItem="1RC-xn-LVw" secondAttribute="top" id="ozB-P4-lRH"/>
-                <constraint firstItem="UWa-6Y-xvC" firstAttribute="top" secondItem="Bpv-Fk-XIc" secondAttribute="bottom" constant="2" id="tuM-yr-dGI"/>
+                <constraint firstItem="iLc-fN-hQX" firstAttribute="top" secondItem="zqo-j6-bn4" secondAttribute="top" id="ozB-P4-lRH"/>
                 <constraint firstItem="GhL-eL-U4b" firstAttribute="leading" secondItem="aLL-sv-zSH" secondAttribute="trailing" constant="15" id="uUA-Ta-Kcy"/>
                 <constraint firstItem="UWa-6Y-xvC" firstAttribute="leading" secondItem="Bpv-Fk-XIc" secondAttribute="leading" id="xDm-DV-epI"/>
                 <constraint firstItem="aLL-sv-zSH" firstAttribute="leading" secondItem="Bpv-Fk-XIc" secondAttribute="trailing" constant="10" id="xuK-hy-7yF"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="1RC-xn-LVw"/>
-            <connections>
-                <outlet property="searchButton" destination="aLL-sv-zSH" id="HjF-i6-LCb"/>
-            </connections>
             <point key="canvasLocation" x="-353.62318840579712" y="-121.20535714285714"/>
         </view>
     </objects>
