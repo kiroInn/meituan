@@ -23,7 +23,7 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B8E-jr-0HA">
-                    <rect key="frame" x="0.0" y="139" width="109" height="29"/>
+                    <rect key="frame" x="0.0" y="137" width="109" height="31"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -36,7 +36,7 @@
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="B8E-jr-0HA" secondAttribute="bottom" constant="4" id="etA-J4-d6h"/>
                 <constraint firstItem="csL-jB-6Ay" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="lcl-8V-oq4"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="B8E-jr-0HA" secondAttribute="trailing" id="ziM-br-50b"/>
-                <constraint firstItem="B8E-jr-0HA" firstAttribute="top" secondItem="csL-jB-6Ay" secondAttribute="bottom" constant="10" id="zmX-cj-o9j"/>
+                <constraint firstItem="B8E-jr-0HA" firstAttribute="top" secondItem="csL-jB-6Ay" secondAttribute="bottom" constant="8" id="zmX-cj-o9j"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
