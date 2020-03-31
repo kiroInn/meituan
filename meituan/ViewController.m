@@ -15,6 +15,7 @@
 #import "ColorUtil.h"
 #import "StoreListViewController.h"
 #import "HeaderViewController.h"
+#import "util/ColorUtil.h"
 
 @interface ViewController ()
 @property(nonatomic, weak) IBOutlet UIView *headerView;
@@ -53,13 +54,13 @@
 }
 
 - (void)setPageStyle {
-    self.view.backgroundColor = [UIColor systemYellowColor];
+    self.view.backgroundColor = ssRGBHex(0xffcf01);
 }
 
 - (void)addHeaderView {
     UIViewController *headerViewController = [[HeaderViewController alloc] initWithNibName:@"HeaderView" bundle:nil];
     _headerView= headerViewController.view;
-    _headerView.backgroundColor = [UIColor systemYellowColor];
+    _headerView.backgroundColor = ssRGBHex(0xffcf01);
     _headerView.frame = CGRectMake(0, 44, self.view.frame.size.width, 40);
     [_scrollView addSubview:_headerView];
     [self addChildViewController:headerViewController];
