@@ -53,13 +53,13 @@
 }
 
 - (void)setPageStyle {
-    self.view.backgroundColor = [UIColor colorWithRed:204 green:204 blue:204 alpha:1];
+    self.view.backgroundColor = [UIColor systemYellowColor];
 }
 
 - (void)addHeaderView {
     UIViewController *headerViewController = [[HeaderViewController alloc] initWithNibName:@"HeaderView" bundle:nil];
     _headerView= headerViewController.view;
-   _headerView.backgroundColor = self.view.backgroundColor = [UIColor systemYellowColor];
+    _headerView.backgroundColor = [UIColor systemYellowColor];
     _headerView.frame = CGRectMake(0, 44, self.view.frame.size.width, 40);
     [_scrollView addSubview:_headerView];
     [self addChildViewController:headerViewController];
@@ -76,6 +76,7 @@
     _scrollView.scrollEnabled = YES;
     _scrollView.userInteractionEnabled = YES;
     _scrollView.alwaysBounceVertical = YES;
+    _scrollView.layer.backgroundColor = ssRGBHex(0xffffff).CGColor;
     CGRect rect = _scrollView.frame;
     CGFloat headerEndPoint = _headerView.frame.origin.y + _headerView.frame.size.height;
     rect.origin.y = headerEndPoint;

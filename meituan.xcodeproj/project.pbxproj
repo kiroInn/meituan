@@ -8,13 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0765AAEB242CBE51007C11F9 /* toolButton.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0765AAEA242CBE51007C11F9 /* toolButton.plist */; };
-		0765AAF2242CC0CD007C11F9 /* HotView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0765AAED242CC0CC007C11F9 /* HotView.xib */; };
-		0765AAF7242CC16E007C11F9 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0765AAF6242CC16E007C11F9 /* HeaderView.xib */; };
 		0765AAFC242CCBA5007C11F9 /* OneToolButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0765AAF9242CCBA5007C11F9 /* OneToolButtonView.xib */; };
 		0765AAFD242CCBA5007C11F9 /* OneToolButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0765AAFA242CCBA5007C11F9 /* OneToolButtonView.m */; };
 		0765AB00242CCC19007C11F9 /* ToolButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0765AAFF242CCC19007C11F9 /* ToolButton.m */; };
 		0765AB06242CE573007C11F9 /* ToolButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0765AB05242CE573007C11F9 /* ToolButtonView.m */; };
-		07E0F435242F7CAC009AE05C /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E0F434242F7CAC009AE05C /* HeaderView.m */; };
 		489F238A242F2366004BB723 /* ModulesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 489F2389242F2366004BB723 /* ModulesCell.m */; };
 		489F238C242F236C004BB723 /* ModulesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 489F238B242F236C004BB723 /* ModulesCell.xib */; };
 		489F238E242F295D004BB723 /* ColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 489F238D242F295D004BB723 /* ColorUtil.m */; };
@@ -32,6 +29,17 @@
 		48A32D5E242C901600A6B6DA /* ModulesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A32D5D242C901600A6B6DA /* ModulesView.xib */; };
 		48A32D62242C98BB00A6B6DA /* BottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A32D61242C98BB00A6B6DA /* BottomView.xib */; };
 		48A32D64242C9EB000A6B6DA /* ModulesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A32D63242C9EB000A6B6DA /* ModulesViewController.m */; };
+		F5CB9F132432F4FD0084737C /* SearchPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CB9F0C2432F4FD0084737C /* SearchPageViewController.m */; };
+		F5CB9F142432F4FD0084737C /* HeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CB9F0D2432F4FD0084737C /* HeaderViewController.m */; };
+		F5CB9F152432F4FD0084737C /* HotView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5CB9F0E2432F4FD0084737C /* HotView.xib */; };
+		F5CB9F162432F4FD0084737C /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5CB9F0F2432F4FD0084737C /* HeaderView.xib */; };
+		F5CB9F172432F4FD0084737C /* SearchPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5CB9F122432F4FD0084737C /* SearchPage.storyboard */; };
+		F5CB9F242432F55A0084737C /* EWAddressPickerPresentAnimated.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CB9F192432F55A0084737C /* EWAddressPickerPresentAnimated.m */; };
+		F5CB9F252432F55A0084737C /* area.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5CB9F1A2432F55A0084737C /* area.plist */; };
+		F5CB9F262432F55A0084737C /* EWAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CB9F1C2432F55A0084737C /* EWAddressViewController.m */; };
+		F5CB9F272432F55A0084737C /* EWAddressPickViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CB9F1D2432F55A0084737C /* EWAddressPickViewTableViewCell.m */; };
+		F5CB9F282432F55A0084737C /* EWAddressPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CB9F212432F55A0084737C /* EWAddressPickerView.m */; };
+		F5CB9F292432F55A0084737C /* EWAddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CB9F222432F55A0084737C /* EWAddressModel.m */; };
 		F5F8F0E8242DA1D0005F5F39 /* SwiperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F8F0E6242DA1D0005F5F39 /* SwiperViewController.m */; };
 		F5F8F0EF242DAD8C005F5F39 /* SwiperView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5F8F0EE242DAD8C005F5F39 /* SwiperView.xib */; };
 		F5F8F104242DD7A8005F5F39 /* StoreListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F8F102242DD7A8005F5F39 /* StoreListViewController.m */; };
@@ -57,8 +65,6 @@
 
 /* Begin PBXFileReference section */
 		0765AAEA242CBE51007C11F9 /* toolButton.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = toolButton.plist; sourceTree = "<group>"; };
-		0765AAED242CC0CC007C11F9 /* HotView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotView.xib; sourceTree = "<group>"; };
-		0765AAF6242CC16E007C11F9 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		0765AAF9242CCBA5007C11F9 /* OneToolButtonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OneToolButtonView.xib; sourceTree = "<group>"; };
 		0765AAFA242CCBA5007C11F9 /* OneToolButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneToolButtonView.m; sourceTree = "<group>"; };
 		0765AAFB242CCBA5007C11F9 /* OneToolButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneToolButtonView.h; sourceTree = "<group>"; };
@@ -66,8 +72,6 @@
 		0765AAFF242CCC19007C11F9 /* ToolButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolButton.m; sourceTree = "<group>"; };
 		0765AB04242CE573007C11F9 /* ToolButtonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolButtonView.h; sourceTree = "<group>"; };
 		0765AB05242CE573007C11F9 /* ToolButtonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolButtonView.m; sourceTree = "<group>"; };
-		07E0F433242F7CAC009AE05C /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
-		07E0F434242F7CAC009AE05C /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
 		489F2388242F235F004BB723 /* ModulesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModulesCell.h; sourceTree = "<group>"; };
 		489F2389242F2366004BB723 /* ModulesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModulesCell.m; sourceTree = "<group>"; };
 		489F238B242F236C004BB723 /* ModulesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModulesCell.xib; sourceTree = "<group>"; };
@@ -98,6 +102,24 @@
 		48A32D61242C98BB00A6B6DA /* BottomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomView.xib; sourceTree = "<group>"; };
 		48A32D63242C9EB000A6B6DA /* ModulesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModulesViewController.m; sourceTree = "<group>"; };
 		48A32D65242C9ED700A6B6DA /* ModulesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModulesViewController.h; sourceTree = "<group>"; };
+		F5CB9F0C2432F4FD0084737C /* SearchPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchPageViewController.m; sourceTree = "<group>"; };
+		F5CB9F0D2432F4FD0084737C /* HeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderViewController.m; sourceTree = "<group>"; };
+		F5CB9F0E2432F4FD0084737C /* HotView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotView.xib; sourceTree = "<group>"; };
+		F5CB9F0F2432F4FD0084737C /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		F5CB9F102432F4FD0084737C /* SearchPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchPageViewController.h; sourceTree = "<group>"; };
+		F5CB9F112432F4FD0084737C /* HeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderViewController.h; sourceTree = "<group>"; };
+		F5CB9F122432F4FD0084737C /* SearchPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchPage.storyboard; sourceTree = "<group>"; };
+		F5CB9F192432F55A0084737C /* EWAddressPickerPresentAnimated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EWAddressPickerPresentAnimated.m; sourceTree = "<group>"; };
+		F5CB9F1A2432F55A0084737C /* area.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = area.plist; sourceTree = "<group>"; };
+		F5CB9F1B2432F55A0084737C /* EWAddressPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EWAddressPickerView.h; sourceTree = "<group>"; };
+		F5CB9F1C2432F55A0084737C /* EWAddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EWAddressViewController.m; sourceTree = "<group>"; };
+		F5CB9F1D2432F55A0084737C /* EWAddressPickViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EWAddressPickViewTableViewCell.m; sourceTree = "<group>"; };
+		F5CB9F1E2432F55A0084737C /* EWAddressModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EWAddressModel.h; sourceTree = "<group>"; };
+		F5CB9F1F2432F55A0084737C /* EWAddressPickerPresentAnimated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EWAddressPickerPresentAnimated.h; sourceTree = "<group>"; };
+		F5CB9F202432F55A0084737C /* EWAddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EWAddressViewController.h; sourceTree = "<group>"; };
+		F5CB9F212432F55A0084737C /* EWAddressPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EWAddressPickerView.m; sourceTree = "<group>"; };
+		F5CB9F222432F55A0084737C /* EWAddressModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EWAddressModel.m; sourceTree = "<group>"; };
+		F5CB9F232432F55A0084737C /* EWAddressPickViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EWAddressPickViewTableViewCell.h; sourceTree = "<group>"; };
 		F5F8F0E5242DA1D0005F5F39 /* SwiperViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiperViewController.h; sourceTree = "<group>"; };
 		F5F8F0E6242DA1D0005F5F39 /* SwiperViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwiperViewController.m; sourceTree = "<group>"; };
 		F5F8F0EE242DAD8C005F5F39 /* SwiperView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwiperView.xib; sourceTree = "<group>"; };
@@ -131,17 +153,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0765AAEC242CBF24007C11F9 /* head */ = {
-			isa = PBXGroup;
-			children = (
-				07E0F433242F7CAC009AE05C /* HeaderView.h */,
-				07E0F434242F7CAC009AE05C /* HeaderView.m */,
-				0765AAF6242CC16E007C11F9 /* HeaderView.xib */,
-				0765AAED242CC0CC007C11F9 /* HotView.xib */,
-			);
-			path = head;
-			sourceTree = "<group>";
-		};
 		0765AAF8242CCB29007C11F9 /* toolbutton */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,11 +225,12 @@
 		48A32D27242B210800A6B6DA /* meituan */ = {
 			isa = PBXGroup;
 			children = (
+				F5CB9F182432F55A0084737C /* EWAddressPicker */,
+				F5CB9F0B2432F4FD0084737C /* head */,
 				F5F8F100242DD77D005F5F39 /* storeList */,
 				489F238F242F2966004BB723 /* util */,
 				F5F8F0D9242D9EBF005F5F39 /* swiper */,
 				0765AAF8242CCB29007C11F9 /* toolbutton */,
-				0765AAEC242CBF24007C11F9 /* head */,
 				48802539242CAB3700B8FAFF /* modules */,
 				48A32D28242B210800A6B6DA /* AppDelegate.h */,
 				48A32D29242B210800A6B6DA /* AppDelegate.m */,
@@ -252,6 +264,39 @@
 			);
 			path = meituanUITests;
 			sourceTree = "<group>";
+		};
+		F5CB9F0B2432F4FD0084737C /* head */ = {
+			isa = PBXGroup;
+			children = (
+				F5CB9F0C2432F4FD0084737C /* SearchPageViewController.m */,
+				F5CB9F0D2432F4FD0084737C /* HeaderViewController.m */,
+				F5CB9F0E2432F4FD0084737C /* HotView.xib */,
+				F5CB9F0F2432F4FD0084737C /* HeaderView.xib */,
+				F5CB9F102432F4FD0084737C /* SearchPageViewController.h */,
+				F5CB9F112432F4FD0084737C /* HeaderViewController.h */,
+				F5CB9F122432F4FD0084737C /* SearchPage.storyboard */,
+			);
+			path = head;
+			sourceTree = "<group>";
+		};
+		F5CB9F182432F55A0084737C /* EWAddressPicker */ = {
+			isa = PBXGroup;
+			children = (
+				F5CB9F192432F55A0084737C /* EWAddressPickerPresentAnimated.m */,
+				F5CB9F1A2432F55A0084737C /* area.plist */,
+				F5CB9F1B2432F55A0084737C /* EWAddressPickerView.h */,
+				F5CB9F1C2432F55A0084737C /* EWAddressViewController.m */,
+				F5CB9F1D2432F55A0084737C /* EWAddressPickViewTableViewCell.m */,
+				F5CB9F1E2432F55A0084737C /* EWAddressModel.h */,
+				F5CB9F1F2432F55A0084737C /* EWAddressPickerPresentAnimated.h */,
+				F5CB9F202432F55A0084737C /* EWAddressViewController.h */,
+				F5CB9F212432F55A0084737C /* EWAddressPickerView.m */,
+				F5CB9F222432F55A0084737C /* EWAddressModel.m */,
+				F5CB9F232432F55A0084737C /* EWAddressPickViewTableViewCell.h */,
+			);
+			name = EWAddressPicker;
+			path = meituan/EWAddressPicker;
+			sourceTree = SOURCE_ROOT;
 		};
 		F5F8F0D9242D9EBF005F5F39 /* swiper */ = {
 			isa = PBXGroup;
@@ -376,16 +421,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5CB9F162432F4FD0084737C /* HeaderView.xib in Resources */,
 				48A32D35242B210800A6B6DA /* LaunchScreen.storyboard in Resources */,
 				489F239624303DD5004BB723 /* MoreView.storyboard in Resources */,
+				F5CB9F152432F4FD0084737C /* HotView.xib in Resources */,
 				F5F8F0EF242DAD8C005F5F39 /* SwiperView.xib in Resources */,
-				0765AAF2242CC0CD007C11F9 /* HotView.xib in Resources */,
 				48A32D5E242C901600A6B6DA /* ModulesView.xib in Resources */,
 				48A32D32242B210800A6B6DA /* Assets.xcassets in Resources */,
+				F5CB9F172432F4FD0084737C /* SearchPage.storyboard in Resources */,
 				489F238C242F236C004BB723 /* ModulesCell.xib in Resources */,
 				48A32D30242B210800A6B6DA /* Main.storyboard in Resources */,
 				0765AAFC242CCBA5007C11F9 /* OneToolButtonView.xib in Resources */,
-				0765AAF7242CC16E007C11F9 /* HeaderView.xib in Resources */,
+				F5CB9F252432F55A0084737C /* area.plist in Resources */,
 				0765AAEB242CBE51007C11F9 /* toolButton.plist in Resources */,
 				F5F8F105242DD7A8005F5F39 /* StoreListView.xib in Resources */,
 				48A32D62242C98BB00A6B6DA /* BottomView.xib in Resources */,
@@ -417,15 +464,21 @@
 				F5F8F104242DD7A8005F5F39 /* StoreListViewController.m in Sources */,
 				0765AAFD242CCBA5007C11F9 /* OneToolButtonView.m in Sources */,
 				F5F8F0E8242DA1D0005F5F39 /* SwiperViewController.m in Sources */,
+				F5CB9F272432F55A0084737C /* EWAddressPickViewTableViewCell.m in Sources */,
+				F5CB9F142432F4FD0084737C /* HeaderViewController.m in Sources */,
 				489F238E242F295D004BB723 /* ColorUtil.m in Sources */,
+				F5CB9F132432F4FD0084737C /* SearchPageViewController.m in Sources */,
 				48A32D38242B210800A6B6DA /* main.m in Sources */,
-				07E0F435242F7CAC009AE05C /* HeaderView.m in Sources */,
 				489F238A242F2366004BB723 /* ModulesCell.m in Sources */,
+				F5CB9F292432F55A0084737C /* EWAddressModel.m in Sources */,
+				F5CB9F262432F55A0084737C /* EWAddressViewController.m in Sources */,
 				489F239824303FC4004BB723 /* MoreViewController.m in Sources */,
 				489F2393242F9B50004BB723 /* ModulesModel.m in Sources */,
 				48A32D2A242B210800A6B6DA /* AppDelegate.m in Sources */,
 				48A32D64242C9EB000A6B6DA /* ModulesViewController.m in Sources */,
 				0765AB00242CCC19007C11F9 /* ToolButton.m in Sources */,
+				F5CB9F282432F55A0084737C /* EWAddressPickerView.m in Sources */,
+				F5CB9F242432F55A0084737C /* EWAddressPickerPresentAnimated.m in Sources */,
 				0765AB06242CE573007C11F9 /* ToolButtonView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
