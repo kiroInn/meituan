@@ -10,5 +10,5 @@
 #import "ModulesModel.h"
 
 @interface ModulesCell : UICollectionViewCell
-
+-(void)setModel:(ModulesModel *) model;
 @end

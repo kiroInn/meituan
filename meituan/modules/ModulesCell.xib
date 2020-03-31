@@ -17,13 +17,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="csL-jB-6Ay">
-                    <rect key="frame" x="10" y="44" width="89" height="89"/>
+                    <rect key="frame" x="12" y="44" width="85" height="85"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="csL-jB-6Ay" secondAttribute="height" multiplier="1:1" id="h4L-Xa-gve"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B8E-jr-0HA">
-                    <rect key="frame" x="0.0" y="143" width="109" height="25"/>
+                    <rect key="frame" x="0.0" y="139" width="109" height="29"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -31,10 +31,10 @@
             </subviews>
             <constraints>
                 <constraint firstItem="csL-jB-6Ay" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="5Lv-1h-oCm"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="csL-jB-6Ay" secondAttribute="trailing" constant="10" id="7XJ-uA-mxc"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="csL-jB-6Ay" secondAttribute="trailing" constant="12" id="7XJ-uA-mxc"/>
                 <constraint firstItem="B8E-jr-0HA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="dpb-S6-S5q"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="B8E-jr-0HA" secondAttribute="bottom" constant="4" id="etA-J4-d6h"/>
-                <constraint firstItem="csL-jB-6Ay" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="lcl-8V-oq4"/>
+                <constraint firstItem="csL-jB-6Ay" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="lcl-8V-oq4"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="B8E-jr-0HA" secondAttribute="trailing" id="ziM-br-50b"/>
                 <constraint firstItem="B8E-jr-0HA" firstAttribute="top" secondItem="csL-jB-6Ay" secondAttribute="bottom" constant="10" id="zmX-cj-o9j"/>
             </constraints>
@@ -43,8 +43,8 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
-                <outlet property="image" destination="csL-jB-6Ay" id="htp-Kt-NtS"/>
-                <outlet property="title" destination="B8E-jr-0HA" id="kdI-5Y-p0P"/>
+                <outlet property="image" destination="csL-jB-6Ay" id="X3w-Dz-ceg"/>
+                <outlet property="title" destination="B8E-jr-0HA" id="D8M-97-ZtZ"/>
             </connections>
             <point key="canvasLocation" x="51.449275362318843" y="128.57142857142856"/>
         </view>
