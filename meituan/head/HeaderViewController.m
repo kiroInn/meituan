@@ -14,6 +14,7 @@
 @property(strong,nonatomic) NSArray *array;
 @property (weak, nonatomic) IBOutlet UIButton *searchButton;
 @property(strong,nonatomic)  NSTimer *timer;
+@property (weak, nonatomic) IBOutlet UIImageView *headerImage;
 @property (weak, nonatomic) IBOutlet UIButton *location;
 
 @end
@@ -29,7 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _array=@[@"XXX酒店",@"肉夹馍来了",@"纯净水",@"你说啥",@"不知道"];
-    // Do any additional setup after loading the view.
+    _headerImage.layer.cornerRadius = 17;
 }
 
 - (IBAction)selectLocation:(id)sender {
